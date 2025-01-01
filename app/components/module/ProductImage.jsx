@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { PictureOutlined } from "@ant-design/icons";
-const ProductImage = ({ selectedImage, selectedAttributes }) => {
+const ProductImage = ({ selectedImage}) => {
   return (
     <div className="flex max-sm:flex-[1] flex-[0.7] flex-col gap-4  max-w-full  max-md:justify-center justify-start max-md:items-center items-end max-sm:py-0 py-2 max-sm:px-0 px-5 relative top-1">
       <div className="max-w-72 h-auto min-h-[20rem] w-full aspect-square ">
@@ -21,11 +21,6 @@ const ProductImage = ({ selectedImage, selectedAttributes }) => {
             <PictureOutlined className=" text-slate-400 text-8xl" />
           </div>
         )}
-        <ul className="w-full flex gap-2 mt-4 text-xs pb-7 ">
-          {selectedAttributes.map((attr, i) => (
-            <li key={i}>{attr}</li>
-          ))}
-        </ul>
       </div>
     </div>
   );
